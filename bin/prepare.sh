@@ -261,7 +261,7 @@ else
 	echo "You did not choose Mumble"
 fi
 
-chown -R mc$SERVER_ID:mc$SERVER_ID "$SERVER_DIR"
+chown -R -h mc$SERVER_ID:mc$SERVER_ID "$SERVER_DIR"
 LSOF=`which lsof`
     #Convert IP to a format accepted by lsof
     if [ "$IP" = "0.0.0.0" ]; then
